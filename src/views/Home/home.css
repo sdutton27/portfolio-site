@@ -1,0 +1,31 @@
+.container {
+background: linear-gradient(3deg, rgba(100,191,253,0.3) 0%, rgba(254,203,71,0.3) 30%, rgba(255,255,255,1) 100%);
+}
+
+.skill-box {
+    margin: 13px;
+    width: max-content; 
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px; 
+}
+
+.skill-text {
+    padding: 4px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Work sans", sans-serif !important;
+}
+
+.tech-stack-img {
+    height: 80px;
+    margin: 10px;
+    transition: transform .2s;
+}
+
+.tech-stack-img:hover {
+    transform: scale(1.2);
+
+}
