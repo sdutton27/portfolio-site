@@ -1,0 +1,58 @@
+#footer-container {
+    padding-bottom: 10px;
+}
+
+#connect {
+    padding: 0px 30px;
+}
+
+.socials-text {
+    padding: 0px 12px;
+    font-size: 1rem; 
+    font-family: "Work Sans", sans-serif !important;
+}
+
+.socials-container {
+    padding: 6px 40px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+}
+
+#source-code-container {
+    padding: 5px 0px 0px 0px !important;
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    #footer-container {
+        padding-bottom: 10px;
+    }
+
+    #footer-title {
+        font-size: 1.2rem;
+    }
+
+    #connect {
+        padding: 0px 20px;
+        font-size: 1.4rem !important;
+    }
+
+    #like-wys {
+        padding-bottom: 5px;
+    }
+
+    #source-code-container {
+        /* padding-left: 15px;
+        padding-top: 25px; */
+        padding: 35px 0px;
+    }
+
+    .socials-container {
+        padding: 6px 27px; 
+    }
+
+    #source-code-text { 
+        padding: 0px;
+    }
+}

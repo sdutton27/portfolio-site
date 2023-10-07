@@ -4,36 +4,103 @@
     /* top: 16px;
     transform-origin: 0px, 0px; */
 /* } */
-
-.title {
-    font-size: 2rem !important;
+/* .button {
+    margin: 20px 0px;
+    width: 100%; 
+    background-color: #000;
+    color: #fff; 
+    border: 0px; 
+    padding: 25px; 
+    font-size: 1.5rem; 
+    font-family: "Work Sans", sans-serif !important;
 }
 
+.button:hover {
+    background-color:rgba(0,0,0,0.6) !important;
+} */
+
+.title {
+    font-size: 1.8rem !important;
+}
+
+/* Larger than a phone */
 @media (min-width: 576px) {
     .title {
         font-size: 2.4rem !important;
+    }
+    #hamburger-container {
+        margin: 15px 0 auto !important; 
     }
 }
 
 #navbar {
     display: flex;
-    padding-top: 30px;
-    /* justify-content: center; */
-    flex-direction: row;
-    width: 100vw;
+    /* padding-top: 30px; */
+    justify-content: flex-start;
+    /* flex-direction: row; */
+    flex-direction: column;
+    align-items: center;
+    /* width: 100vw; */
     background-color: #fff;
     overflow-y: hidden;
     position:sticky; /* make sure this works */
-    height: 80px; /* get height of toolbox */
-    transition: height .2s linear;
+    position:-webkit-sticky;
+    top:0px;
+    /* min-height: 80px;  */
+    /* transition: height .2s linear; */
+    transition: transform .2s linear;
     box-shadow: 0px 1px 12px -8px;
 }
 
-#navbar.open {
-    align-items:flex-start !important;
-    height: 100vh; 
+#navbar-top {
+    display:flex;
+    width:100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 
-#navbar.closed { 
+#navbar-open {
+    overflow: hidden;
+    transition: height .3s linear;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar-open.open {
+    /* align-items:flex-start !important; */
+    /* height: 100vh;  */
+    height: 100vh;
+}
+
+#navbar-open.closed { 
     /* align-items: center; */
+    height: 0px;
+}
+
+.menu-item {
+    font-size: 1.6rem !important;
+    font-weight: 500 !important;
+    padding: 20px 50px;
+    font-family: "Work Sans", sans-serif !important;
+    transition: transform .2s;
+    content-visibility:visible;
+    color:black;
+}
+
+.menu-item:hover {
+    transform: scale(1.09);
+}
+.menu-item:active {
+    background-clip:initial;
+    background-image:none;
+    -webkit-text-fill-color: black;
+    background-color: rgb(100, 191, 253) !important;
+}
+
+#hamburger-container {
+    justify-self: flex-end;
+    margin: 0 5px 0 auto !important; 
 }
