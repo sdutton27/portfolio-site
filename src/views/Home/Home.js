@@ -200,8 +200,7 @@ export default function TestPage() {
                 </Box>
                 <Box>
                     <button className="button">
-                        More About Simon
-                        <img src="images/right-arrow.png" width="20" alt="arrow" style={{ paddingLeft: "10px" }}></img>
+                        Get In Touch
                     </button>
                 </Box>
             </Box>

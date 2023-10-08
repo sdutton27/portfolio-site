@@ -94,6 +94,7 @@
     transform: scale(1.09);
 }
 .menu-item:active {
+    width: 100%;
     background-clip:initial;
     background-image:none;
     -webkit-text-fill-color: black;
