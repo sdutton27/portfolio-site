@@ -157,14 +157,21 @@ export default function Navbar() {
           </Typography>
           </Link>
           <Link to="/color" style={{textDecoration: "none"}} onClick={handleClick}>
-          <Typography className="menu-item" sx={{
+          {/* <Typography className="menu-item" sx={{
                                                   backgroundImage: `linear-gradient(108deg, rgba(203,11,44,1) 0%, rgba(255,149,4,1) 11%, rgba(204,249,51,1) 18%, rgba(29,253,111,1) 19%, rgba(42,208,230,1) 20%, rgba(39,93,193,1) 22%, rgba(168,5,238,1) 24%)`,
                                                   backgroundSize: "100%",
+                                                  // display: "inline",
                                                   backgroundClip: "text",
                                                   WebkitBackgroundClip: "text",
                                                   WebkitTextFillColor: "transparent"}}>
             C o l o r
+          </Typography> */}
+          <div className="menu-item">
+          <Typography className="color-title" sx={{fontSize: "1.6rem", fontWeight: "500", fontFamily: "Work Sans, sans-serif"
+                }}>
+            C o l o r
           </Typography>
+          </div>
           </Link>
           <Link to="/contact" style={{alignSelf:"center", width: "90%"}} onClick={handleClick}>
           <button className="button">

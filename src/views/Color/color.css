@@ -1,0 +1,36 @@
+.scheme-color {
+    transition: transform .2s;
+}
+
+.scheme-color:hover {
+    transform: scale(1.2);
+}
+
+.scheme-heading {
+    margin-top: 20px !important;
+    margin-right: 5px !important;
+    margin-bottom: 10px !important;
+    font-family: "Lora", sans-serif !important;
+    font-weight: 400; 
+    font-size: 1.2rem !important;
+}
+
+.accordion {
+    font-family: "Lora", sans-serif !important;
+    font-size: 1.5rem !important;
+}
+
+.accordion-header {
+    font-weight: 600 !important;
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    .accordion {
+        font-size: 16px !important;
+    }
+
+    #accordion-1 {
+        margin-top: 30px;
+    }
+}

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import './home.css';
+import { Link } from 'react-router-dom';
 
 export default function TestPage() {
     return (
@@ -15,10 +16,12 @@ export default function TestPage() {
                 <Typography id="heading-subtitle" sx={{ padding: "10px", textAlign: "center", fontSize: "1.4rem", fontFamily: "Work Sans, sans-serif" }}>
                     Meet Simon Dutton, a full-stack engineer with a strong work ethic and a kind heart.
                 </Typography>
+                <Link to="/about">
                 <button className="button"> 
                     About Me
                     <img src="images/right-arrow.png" width="20" alt="arrow" style={{ paddingLeft: "10px" }}></img>
                 </button>
+                </Link>
                 </Box>
                 <Typography className="home-subtitle" sx={{ marginTop: "30px"}}>
                     Educated by the brilliant minds at:
@@ -199,9 +202,11 @@ export default function TestPage() {
                     </Box>
                 </Box>
                 <Box>
+                    <Link to="/contact">
                     <button className="button">
                         Get In Touch
                     </button>
+                    </Link>
                 </Box>
             </Box>
         </div>
