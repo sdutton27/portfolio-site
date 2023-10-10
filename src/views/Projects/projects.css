@@ -1,5 +1,3 @@
-
-
 /* img, div {
   width: 100px;
   height: 100px;
@@ -7,23 +5,23 @@
 /* Phones */
 @media (max-width: 576px) {
     .dialog-img-container {
-        flex-direction:column !important;
+        flex-direction: column !important;
         align-items: center;
     }
-    }
+}
 
 #projects-title {
-    left: 0 ; 
-  right: 0 ; 
-  margin-left: auto ; 
-  margin-right: auto ; 
-  width: 300px;
-  position: absolute;
-  font-size: 3rem;
-  text-align:center;
-  font-weight: 600;
-  font-family: "Lora", sans-serif;
-  color: #0004;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    position: absolute;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Lora", sans-serif;
+    color: #0004;
 }
 
 .inner {
@@ -32,73 +30,73 @@
 }
 
 .projects-container {
-    min-height:calc(100vh - 276px);
+    min-height: calc(100vh - 276px);
     position: relative;
 }
 
 
 .x1 {
-  animation: x 13s linear infinite alternate;
+    animation: x 13s linear infinite alternate;
 }
 
 .y1 {
-  animation: y 7s linear infinite alternate;
+    animation: y 7s linear infinite alternate;
 }
 
 .x2 {
     animation: x 10s linear infinite alternate;
-  }
- 
-  .y2  {
+}
+
+.y2 {
     animation: y 8s linear infinite alternate;
-  }
+}
 
-  .x3 {
+.x3 {
     animation: x 5s linear infinite alternate;
-  }
- 
-  .y3  {
-    animation: y 11s linear infinite alternate;
-  }
+}
 
-  .x4 {
+.y3 {
+    animation: y 11s linear infinite alternate;
+}
+
+.x4 {
     animation: x 7s linear infinite alternate;
-  }
- 
-  .y4  {
+}
+
+.y4 {
     animation: y 6s linear infinite alternate;
-  }
+}
 
 @keyframes x {
-  100% {
-    transform: translateX( calc(100vw - 100px) );
-  }
+    100% {
+        transform: translateX(calc(100vw - 100px));
+    }
 }
 
 @keyframes y {
-  100% {
-    transform: translateY( calc(100vh - 386px) );
-  }
+    100% {
+        transform: translateY(calc(100vh - 386px));
+    }
 }
 
 .paused {
     -webkit-animation-play-state: paused !important;
     -moz-animation-play-state: paused !important;
-    -o-animation-play-state: paused !important; 
+    -o-animation-play-state: paused !important;
     animation-play-state: paused !important;
 }
 
 .dialog-title {
-    font-family:"Lora", sans-serif !important;
+    font-family: "Lora", sans-serif !important;
     font-weight: 600 !important;
 }
 
 .dialog-body {
-    font-family:"Work Sans", sans-serif !important;
+    font-family: "Work Sans", sans-serif !important;
 }
 
 .project-img {
     padding: 20px 10px !important;
     border-radius: 9% !important;
-    object-fit:cover !important;
+    object-fit: cover !important;
 }

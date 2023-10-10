@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { Suspense} from 'react'
 import { Typography } from '@mui/material'
 import './about.css'
 import Resume from '../../files/Simon-Dutton-Resume.pdf'
 import DownloadIcon from '@mui/icons-material/Download';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Model from '../../components/Model/Model'; 
 
 export default function About() {
   return (
     <div className="sidepage-container" style={{display: "flex", flexDirection: "column"}}>
         <Typography id="about-title" sx={{marginLeft: "30px", fontSize:"3rem", fontFamily:"Lora, sans-serif"}}>Meet Simon.</Typography>
-        <div id="bio-pics-container" style={{alignSelf: "center", display: "flex", flexDirection: "row", margin:"20px 20px 40px 20px"}}>
-            <img id="profile-pic" className="profile-pic" src="/images/simon-profile.png" alt="Simon in dress shirt" />
-            <img id="boat-pic" className="profile-pic" src="/images/simon-boat.jpeg" alt="Simon driving boat"/>
-        </div>
+        {/* <div id="bio-img-container" style={{position:"relative"}}> */}
+          <div id="bio-pics-container" style={{
+            //position:"absolute", left: "0",
+            //right:"0", marginLeft: "auto", width:"100vw",
+            //marginRight: "auto", 
+            justifyContent:"center", alignSelf: "center", display: "flex", flexDirection: "row", margin:"20px 20px 40px 20px"}}>
+              <img id="profile-pic" className="profile-pic" src="/images/simon-profile.png" alt="Simon in dress shirt" />
+              <img id="boat-pic" className="profile-pic" src="/images/simon-boat.jpeg" alt="Simon driving boat"/>
+          </div>
+        {/* </div> */}
         <Typography id="bio" sx={{margin: "30px", fontSize:"1.2rem", fontFamily:"Work Sans, sans-serif"}}>
             <b id="bio-name" style={{fontSize:"1.5rem"}}>Simon Dutton</b> is a full-stack engineer with <u>7 
             years of experience</u>. His love of coding started in his very first college class, when
@@ -40,8 +49,31 @@ export default function About() {
         </Typography>
     
         <a href={Resume} download="Simon Dutton Resume" target='_blank'>
-        <button className="button" style={{padding:"15px", marginBottom:"60px"}}>Download Resume <DownloadIcon sx={{fontSize:"3rem", verticalAlign:"middle"}}/></button>
+        <button className="button" style={{padding:"15px", marginBottom:"0px"}}>Download Resume <DownloadIcon sx={{fontSize:"3rem", verticalAlign:"middle"}}/></button>
         </a>
+
+        <Canvas
+        //  camera={{ position: [2, 0, 12.25], fov: 15 }}
+         camera={{ position: [2, 0, 12.25], fov: 15 }}
+         style={{
+            backgroundColor: 'rgba(100, 191, 253, .7)',
+            width: '50vh',
+            height: '50vh',
+            borderRadius: "50%",
+            alignSelf:"center",
+            margin:"15px",
+            boxShadow:"0px 0px 10px rgb(254, 203, 71)"
+         }}
+         
+      >
+         <ambientLight intensity={1.5} />
+         <ambientLight intensity={0.3} />
+         <directionalLight intensity={0.7} />
+         <Suspense fallback={null}>
+            <Model position={[0.025, -0.9, 0]}/>
+         </Suspense>
+         {/* <OrbitControls /> */}
+      </Canvas>
     </div>
   )
 }
