@@ -11,6 +11,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 export default function Color() {
     const [colorOTDName, setColorOTDName] = useState("");
@@ -23,8 +24,7 @@ export default function Color() {
     const [triad, setTriad] = useState([]);
     const [quad, setQuad] = useState([]);
 
-
-    useEffect(()=>{
+    useEffect(() => {
         console.log('mount is happening')
         const color = getColorOfDay();
         getColorAPI(color);
@@ -60,7 +60,7 @@ export default function Color() {
         if (doy <= 360) {
             const color = hslToHex(doy, 100, (doy * dayjs().get('year')) % 100);
             return color;
-        // once the hue has reached its limit at 360, fill in the rest of the dates
+            // once the hue has reached its limit at 360, fill in the rest of the dates
         } else if (doy == 361) {
             return "000000";
         } else if (doy == 362) {
@@ -74,7 +74,7 @@ export default function Color() {
         } else if (doy == 366) {
             return "ffffff";
         }
-        
+
     }
 
     const getColorAPI = async (color) => {
@@ -155,78 +155,102 @@ export default function Color() {
 
     const showColorScheme = (scheme) => {
         // return scheme.map((data, index) => <Typography key={index}>{data.hex.value}</Typography>)
-        return scheme.map((data, index) => <div className="scheme-color" style={{width: "50px", height: "50px", borderRadius:"50%", margin:"5px", backgroundColor:`${data.hex.value}`}} key={index}></div>)
+        return scheme.map((data, index) => <div className="scheme-color" style={{ width: "50px", height: "50px", borderRadius: "50%", margin: "5px", backgroundColor: `${data.hex.value}` }} key={index}></div>)
     };
 
     return (
-        <div style={{display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "40px"}}>
-            <Typography id="arc-text" sx={{fontSize:"3rem", marginTop: "10px", fontWeight: "600", fontFamily: "Lora, sans-serif"}}>C O L O R</Typography>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "40px" }}>
+            <Typography id="arc-text" sx={{ fontSize: "3rem", marginTop: "10px", fontWeight: "600", fontFamily: "Lora, sans-serif" }}>C O L O R</Typography>
             {/* {getColorOfDay()} */}
-            
-            <Canvas style={{padding: "20px", margin: "0px 20px 20px 20px", width: "150px", borderRadius: "50%", boxShadow: `0px 0px 10px #${getColorOfDay()}`}}>
+
+            <Canvas style={{ padding: "20px", margin: "0px 20px 20px 20px", width: "150px", borderRadius: "50%", boxShadow: `0px 0px 10px #${getColorOfDay()}` }}>
                 <ambientLight intensity={Math.PI / 2} />
                 <ambientLight intensity={Math.PI} />
                 {/* <spotLight intensity={0.5} angle={0.2} penumbra={1} position={[5, 15, 10]} /> */}
                 {/* <spotLight position={[15, 15, 15]} angle={0.15} penumbra={1} decay={0} intensity={Math.PI} /> */}
                 {/* <pointLight position={[-15, -15, -15]} decay={0} intensity={Math.PI} /> */}
-                
+
                 <ColorAnimation position={[0, 0, 0]} color={`#${getColorOfDay()}`} />
                 <OrbitControls />
             </Canvas>
 
-            <Typography sx={{fontFamily: "Work Sans, sans-serif", fontWeight: "500", fontSize: "1.7rem"}}>Color of the Day:</Typography>
-            <Typography sx={{fontFamily: "Work Sans, sans-serif", fontWeight: "300", fontSize: "1.5rem", color:`#${getColorOfDay()}` }}>{colorOTDName}</Typography>
+            <Typography sx={{ fontFamily: "Work Sans, sans-serif", fontWeight: "500", fontSize: "1.7rem" }}>Color of the Day:</Typography>
+            <Typography sx={{ fontFamily: "Work Sans, sans-serif", fontWeight: "300", fontSize: "1.5rem", color: `#${getColorOfDay()}` }}>{colorOTDName}</Typography>
 
-            <Typography sx={{marginTop: "60px",fontFamily: "Work Sans, sans-serif", fontWeight: "500", fontSize: "1.5rem"}}>Color Schemes</Typography>
+            <Typography sx={{ marginTop: "60px", fontFamily: "Work Sans, sans-serif", fontWeight: "500", fontSize: "1.5rem" }}>Color Schemes</Typography>
 
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Monochrome</Typography><PopupInfo placement={"bottom"} body={"same hue, different shades"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Monochrome</Typography>
+                <PopupInfo placement={"bottom"} body={"same hue, different shades"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(monochrome)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Monochrome Dark</Typography><PopupInfo body={"same hue, darker shades"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Monochrome Dark</Typography>
+                <PopupInfo body={"same hue, darker shades"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(monochromeDark)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Monochrome Light</Typography><PopupInfo body={"same hue, lighter shades"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Monochrome Light</Typography>
+                <PopupInfo body={"same hue, lighter shades"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(monochromeLight)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Analogic</Typography><PopupInfo body={"adjacent colors of a color"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Analogic</Typography>
+                <PopupInfo body={"adjacent colors of a color"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(analogic)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Complement</Typography><PopupInfo body={"opposing color of a color"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Complement</Typography>
+                <PopupInfo body={"opposing color of a color"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(complement)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Analogic Complement</Typography><PopupInfo placement={"bottom-end"} body={"adjacent colors of opposing color"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Analogic Complement</Typography>
+                <PopupInfo placement={"bottom-end"} body={"adjacent colors of opposing color"} />
+            </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(analogicComplement)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Triad</Typography><PopupInfo body={"colors evenly spaced on color wheel"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Triad</Typography>
+                <PopupInfo body={"colors evenly spaced on color wheel"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(triad)}
             </div>
-            <div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><Typography className="scheme-heading" >Quad</Typography><PopupInfo body={"two evenly spaced sets of opposing colors"}/></div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Typography className="scheme-heading" >Quad</Typography>
+                <PopupInfo body={"two evenly spaced sets of opposing colors"} />
+                </div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
                 {showColorScheme(quad)}
             </div>
-            <Accordion id="accordion-1" sx={{marginTop: "50px"}}>
+            <Accordion id="accordion-1" sx={{ marginTop: "50px" }}>
                 <AccordionSummary
-                
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="accordion-content-1"
-                id="accordion-header-1"
+
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="accordion-content-1"
+                    id="accordion-header-1"
                 >
                     <Typography className="accordion accordion-header">How is the color of the day selected?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="accordion">
-                        The color of the day is calculated using a formula 
-                        developed to ensure a unique color for every day of the year, 
+                        The color of the day is calculated using a formula
+                        developed to ensure a unique color for every day of the year,
                         and in subsequent years. This formula is based on how far
                         through the year the current date is, as the beginning of
-                        the year starts with red-hued colors, and as the year goes on, 
+                        the year starts with red-hued colors, and as the year goes on,
                         it works its way through the rainbow.
                         The shades of the colors vary from day to day / year to year.
                     </Typography>
@@ -234,9 +258,9 @@ export default function Color() {
             </Accordion>
             <Accordion >
                 <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="accordion-content-2"
-                id="accordion-header-2"
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="accordion-content-2"
+                    id="accordion-header-2"
                 >
                     <Typography className="accordion accordion-header">How are the color schemes generated?</Typography>
                 </AccordionSummary>
@@ -250,27 +274,27 @@ export default function Color() {
             </Accordion>
             <Accordion >
                 <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="accordion-content-3"
-                id="accordion-header-3"
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="accordion-content-3"
+                    id="accordion-header-3"
                 >
                     <Typography className="accordion accordion-header">What is <b>The Color API</b>?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="accordion">
-                    <a href="https://www.thecolorapi.com/" target="_blank" rel="noreferrer">The Color API</a> is an API (Application Programming Interface) 
-                        which lets us access pre-calculated data based on the color that is 
-                        selected to be the color of the day. This data includes the name of 
+                        <a href="https://www.thecolorapi.com/" target="_blank" rel="noreferrer">The Color API</a> is an API (Application Programming Interface)
+                        which lets us access pre-calculated data based on the color that is
+                        selected to be the color of the day. This data includes the name of
                         the color & the various colors attributed to it based on
-                        different color schemes. 
+                        different color schemes.
                     </Typography>
                 </AccordionDetails>
             </Accordion>
             <Accordion >
                 <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="accordion-content-4"
-                id="accordion-header-4"
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="accordion-content-4"
+                    id="accordion-header-4"
                 >
                     <Typography className="accordion accordion-header">Why colors?</Typography>
                 </AccordionSummary>
@@ -278,13 +302,12 @@ export default function Color() {
                     <Typography className="accordion">
                         As a full-stack developer, it is my job to be critical of
                         every aspect I put into the visuals of my designs-- one of these being color.
-                        Color theory dates back to as early as 1435, and gives a 
-                        mathematical reasoning for our human emotional response to a color or group of colors.
-                        My more recent interest in color theory can be compared to my longterm love of music theory; 
+                        Color theory gives a mathematical reasoning for our human emotional response to a color or group of colors.
+                        My more recent interest in color theory can be compared to my longterm love of music theory;
                         I have always enjoyed combining my love of the arts / creativity / psychology
-                        with my aptitude for mathematics / patterns. 
-                        Therefore, I felt including color in my portfolio would not only be 
-                        a good way to demonstrate my technological ability to easily get information from an API, 
+                        with my aptitude for mathematics / patterns.
+                        Therefore, I felt including color in my portfolio would not only be
+                        a good way to demonstrate my technological ability to easily get information from an API,
                         but also expresses my interest in the psychology / mathematics of design.
                     </Typography>
                 </AccordionDetails>

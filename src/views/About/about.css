@@ -1,0 +1,83 @@
+.sidepage-container {
+    background: linear-gradient(3deg, rgba(100,191,253,0.2) 0%, rgba(254,203,71,0.2) 40%, rgba(255,255,255,1) 100%);
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    #about-title {
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    .profile-pic {
+        width: 120px !important;
+        height: 132px !important;
+        padding: 12px 12px 28px 12px !important;
+        margin: 10px !important;
+    }
+
+    #bio-pics-container {
+        margin-top: 40px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #bio {
+        font-size: 1.2rem;
+    }
+
+    #bio-name {
+        font-size: 1.5rem !important;
+    }
+
+}
+
+/* Laptops */
+@media (min-width: 1024px) {
+    #about-title {
+        margin-left: 50px;
+        font-size: 3.5rem;
+        padding: 20px 0px;
+    }
+    #bio {
+        margin: 50px;
+        font-size: 1.5rem;
+    }
+
+    #bio-name {
+        font-size: 2rem !important;
+    }
+
+    .profile-pic {
+        width: 200px !important;
+        height: 233px !important;
+        padding: 20px 20px 47px 20px !important;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+}
+
+.profile-pic {
+    width: 150px;
+    height: 175px;
+    object-fit: cover; 
+    padding: 15px 15px 35px 15px;
+    margin: 15px;
+    /* box-shadow: 2px 2px 6px rgb(100, 191, 253); */
+    border-radius: 3px;
+}
+
+#profile-pic {
+    -webkit-transform: rotate(-4deg) translateY(10px);
+    -moz-transform: rotate(-4deg) translateY(10px);
+    transform: rotate(-4deg) translateY(10px);
+    box-shadow: 2px 1px 10px rgb(254, 203, 71);
+}
+
+#boat-pic {
+    -webkit-transform: rotate(6deg) translateY(-20px);
+    -moz-transform: rotate(6deg) translateY(-20px);
+    transform: rotate(6deg) translateY(-20px);
+    box-shadow: 2px 1px 10px rgb(100, 191, 253);
+}

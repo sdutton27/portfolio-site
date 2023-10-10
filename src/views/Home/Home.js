@@ -150,26 +150,16 @@ export default function TestPage() {
                     <a href="https://www.apple.com/final-cut-pro/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/final-cut-pro.png" alt="Final Cut Pro" /></a>
 
                 </Box>
+                
                 <Box className="section">
                     <Typography className="home-subtitle" sx={{ marginTop: "30px" }}>
                         Hear from people who've worked with Simon:
                     </Typography>
                     <Box className="testimonial" sx={{display:"flex", flexDirection:"row"}}>
-                        <img className="testimonial-img testimonial-img-even" src="images/testimonials/Jazz-Cvitan.jpeg" alt="Jazz Cvitan" />
-                        <Box sx={{padding:"25px"}}>
-                            <Typography className="testimonial-text" sx={{fontWeight: "500" }}>
-                                "Simon is a good person"
-                            </Typography>
-                            <Typography className="testimonial-text" sx={{ fontWeight: "300" }}>
-                                Jazz CVitan, Director of Programming, Avita of Needham
-                            </Typography>
-                        </Box>
-                    </Box>
-                    <Box className="testimonial" sx={{display:"flex", flexDirection:"row-reverse"}}>
                     <img className="testimonial-img testimonial-img-odd" src="images/testimonials/Travis-Peck.jpeg" alt="Travis Peck" />
                         <Box sx={{margin:"25px"}}>
                             <Typography className="testimonial-text" sx={{ fontWeight: "500" }}>
-                                "Simon is a good person who is a good person. He is a good person and does a consistently good job at being a good person."
+                            "Working with Simon is a dream! He's great at what he does, efficient, listens to what each member of a team has to say, and provides productive feedback. He is calculated and methodical in his approach to coding and puts both of those factors to work in creative ways regarding both frontend and backend development! Any team would be extremely lucky to have Simon as a member."
                             </Typography>
                             <Typography className="testimonial-text" sx={{ fontWeight: "300" }}>
                                 Travis Peck, Software Engineer, Co.Lab
@@ -177,22 +167,33 @@ export default function TestPage() {
                         </Box>
                         
                     </Box>
-                    <Box className="testimonial" sx={{display:"flex", flexDirection:"row"}}>
-                        <img className="testimonial-img testimonial-img-even" src="images/testimonials/Umut-Dursun.jpg" alt="Umut Dursun" />
+                    <Box className="testimonial" sx={{display:"flex", flexDirection:"row-reverse"}}>
+                        <img className="testimonial-img testimonial-img-even" src="images/testimonials/Jazz-Cvitan.jpeg" alt="Jazz Cvitan" />
                         <Box sx={{padding:"25px"}}>
                             <Typography className="testimonial-text" sx={{fontWeight: "500" }}>
-                                "Simon is a good person"
+                                "Simon is a professional; he approaches his work 
+                                with a genuine heart. After speaking just once with
+                                 Simon, not only do you feel like you have known each 
+                                 other for years, but his kindness, active listening, 
+                                 and supportive approach provides confidence that 
+                                 you’re working alongside someone that is driven,
+                                  determined, and above all else, kind."
                             </Typography>
-                            <Typography className="testimonial-text" sx={{fontWeight: "300" }}>
-                                Umut Dursun, Executive Director, Harbor Camps
+                            <Typography className="testimonial-text" sx={{ fontWeight: "300" }}>
+                                Jazz CVitan, Director of Programming, Avita of Needham
                             </Typography>
                         </Box>
                     </Box>
-                    <Box className="testimonial" sx={{display:"flex", flexDirection:"row-reverse"}}>
+                    <Box className="testimonial" sx={{display:"flex", flexDirection:"row"}}>
                     <img className="testimonial-img testimonial-img-odd" src="images/testimonials/Sarah-Stodder.jpeg" alt="Sarah Stodder" />
                         <Box sx={{margin:"25px"}}>
                             <Typography className="testimonial-text" sx={{ fontWeight: "500" }}>
-                                "Simon is a good person who is a good person. He is a good person and does a consistently good job at being a good person."
+                                "Simon was an outstanding student, and I had the
+                                 pleasure of working with him closely in a development 
+                                 capacity during our time together. His dedication, 
+                                 problem-solving skills, and collaborative nature 
+                                 made him an invaluable member of our team. I have 
+                                 no doubt that he will excel in any endeavor he takes on!"
                             </Typography>
                             <Typography className="testimonial-text" sx={{ fontWeight: "300" }}>
                                 Sarah Stodder, Instructor, Coding Temple
