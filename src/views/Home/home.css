@@ -17,6 +17,7 @@
     padding: 25px; 
     font-size: 1.5rem; 
     font-family: "Work Sans", sans-serif;
+    transition: transform .2s;
 }
 
 .skill-box {
@@ -70,6 +71,7 @@
 
 .button:hover {
     background-color:rgba(0,0,0,0.6) !important;
+    transform: scale(1.05);
 }
 
 /* @media (min-width: 576px) {

@@ -159,7 +159,7 @@ export default function Color() {
     };
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "40px" }}>
+        <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "40px" }}>
             <Typography id="arc-text" sx={{ fontSize: "3rem", marginTop: "10px", fontWeight: "600", fontFamily: "Lora, sans-serif" }}>C O L O R</Typography>
             {/* {getColorOfDay()} */}
 

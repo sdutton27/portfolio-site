@@ -16,7 +16,7 @@ export default function About() {
             <b id="bio-name" style={{fontSize:"1.5rem"}}>Simon Dutton</b> is a full-stack engineer with <u>7 
             years of experience</u>. His love of coding started in his very first college class, when
             he immediately knew based on his lifelong love of <u>creative problem solving</u> that software development was the field for him. Since then, he has enjoyed going <u>
-            above and beyond</u> with every project he's worked on, earning <u>multiple honors and scholarships</u>, and graduating Magna Cum Laude with a <u>3.9 GPA</u> as a double major 
+            above and beyond</u> with every project he's worked on, earning <u>multiple awards and scholarships</u>, and graduating Magna Cum Laude with a <u>3.9 GPA</u> as a double major 
             in Computer Science and Music. 
             <br/>
             <br/>
