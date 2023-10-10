@@ -54,14 +54,14 @@ export default function About() {
 
         <Canvas
         //  camera={{ position: [2, 0, 12.25], fov: 15 }}
-         camera={{ position: [2, 0, 12.25], fov: 15 }}
+         camera={{ position: [2, 0, 8.25], fov: 15 }}
          style={{
             backgroundColor: 'rgba(100, 191, 253, .7)',
             width: '50vh',
             height: '50vh',
             borderRadius: "50%",
             alignSelf:"center",
-            margin:"15px",
+            margin:"15px 0px",
             boxShadow:"0px 0px 10px rgb(254, 203, 71)"
          }}
          
