@@ -11,10 +11,10 @@ export default function TestPage() {
             <Box className="container" component="main" sx={{ p: 3 }}>
                 <Box className="section">
                 <Typography id="home-title" sx={{ textAlign: "center", fontSize: "3.6rem", fontFamily: "Lora, sans-serif" }}>
-                    Problem Solving. Creativity. Entrepren&shy;eurship. Software Developing.
+                    Problem Solving. Creativity. Entrepren&shy;eurship. Software Development.
                 </Typography>
                 <Typography id="heading-subtitle" sx={{ padding: "10px", textAlign: "center", fontSize: "1.4rem", fontFamily: "Work Sans, sans-serif" }}>
-                    Meet Simon Dutton, a full-stack engineer with a strong work ethic and a kind heart.
+                    Meet Simon Dutton, a full-stack engineer & systems programmer with a strong work ethic and a passion for learning.
                 </Typography>
                 <Link to="/about">
                 <button className="button"> 
@@ -39,25 +39,25 @@ export default function TestPage() {
                     <Box className="skill-box" style={{ backgroundColor: "#2596be44" }}>
                         <img className="smiley" src="images/closed-eye-smiley.png" alt="smiley face" width="20px"></img>
                         <Typography className="skill-text">
-                            Team building
+                            Leadership
                         </Typography>
                     </Box>
                     <Box className="skill-box" style={{ backgroundColor: "#25a2b344" }}>
                         <img className="smiley" src="images/smiley.png" alt="smiley face" width="20px"></img>
                         <Typography className="skill-text">
-                            Leadership
+                            Communication
                         </Typography>
                     </Box>
                     <Box className="skill-box" style={{ backgroundColor: "#25b2b044" }}>
                         <img className="smiley" src="images/big-smiley.png" alt="smiley face" width="20px"></img>
                         <Typography className="skill-text">
-                            Communication
+                            Organization
                         </Typography>
                     </Box>
                     <Box className="skill-box" style={{ backgroundColor: "#25beae44" }}>
                         <img className="smiley" src="images/closed-eye-smiley.png" alt="smiley face" width="20px"></img>
                         <Typography className="skill-text">
-                            Organization
+                            Documentation
                         </Typography>
                     </Box>
                     <Box className="skill-box" style={{ backgroundColor: "#25c1aa44" }}>
@@ -93,7 +93,7 @@ export default function TestPage() {
                     <Box className="skill-box" style={{ backgroundColor: "#25da7044" }}>
                         <img className="smiley" src="images/closed-eye-smiley.png" alt="smiley face" width="20px"></img>
                         <Typography className="skill-text" >
-                            Time management
+                            Scalability
                         </Typography>
                     </Box>
                 </Box>
@@ -101,7 +101,8 @@ export default function TestPage() {
                     Experience with the following technologies:
                 </Typography>
                 <Box className="section" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyContent: "center" }}>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/html.png" alt="HTML-5" /></a>
+                    
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/html.png" alt="HTML-5" /></a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/css" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/css-3.png" alt="CSS-3" /></a>
                     <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/js.png" alt="JavaScript" /></a>
                     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/typescript.png" alt="TypeScript" /></a>
@@ -109,45 +110,102 @@ export default function TestPage() {
                     <a href="https://www.java.com/en/download/help/whatis_java.html" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/java.png" alt="Java" /></a>
                     <a href="https://en.wikipedia.org/wiki/C_(programming_language)/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/c.png" alt="C" /></a>
                     <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/assembly.png" alt="Assembly Code" /></a>
+
+                    <a href="https://angular.dev/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/angular.png" alt="Angular" /></a>
                     <a href="https://react.dev/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/react.png" alt="React" /></a>
                     <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank"rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/flask-logo.png" alt="Flask" /></a>
-                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/git.png" alt="Git" /></a>
-                    <a href="https://github.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/github.png" alt="GitHub" /></a>
-                    <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/docker.png" alt="Docker" /></a>
-                    <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/aws.png" alt="AWS" /></a>
-                    <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/sql.png" alt="SQL" /></a>
+                    {/* Spring */}
+                    <a href="https://spring.io/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/spring.png" alt="Spring" /></a>
+                    {/* Spring Boot */}
+                    <a href="https://spring.io/projects/spring-boot/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/spring-boot.svg" alt="Spring Boot" /></a>
+                   {/* Django */}
+                   <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/django.png" alt="Django" /></a>
+                    {/* Tomcat */}
+                    <a href="https://tomcat.apache.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/tomcat.png" alt="Tomcat" /></a>
+                    <a href="https://nodejs.org/en" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/nodejs-logo.png" alt="NodeJS" /></a>
+                    <a href="https://www.linux.com/what-is-linux/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/linux.png" alt="Linux" /></a>
+                    {/* Maven */}
+                    <a href="https://maven.apache.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/maven.svg" alt="Apache Maven" /></a>
+                    {/* Gradle */}
+                    <a href="https://gradle.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/gradle.png" alt="Gradle" /></a>
+                    {/* Jenkins */}
+                    <a href="https://www.jenkins.io/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/jenkins.png" alt="Jenkins" /></a>
                     <a href="https://en.wikipedia.org/wiki/NoSQL" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/nosql.png" alt="NoSQL" /></a>
+                    <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/sql.png" alt="SQL" /></a>
                     <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/postgresql.png" alt="PostgreSQL" /></a>
+                    {/* Oracle DB */}
+                    <a href="https://www.oracle.com/database/technologies/appdev/sql.html" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/oracle.png" alt="Oracle Database" /></a>
+                    {/* PL/SQL */}
+                    <a href="https://www.oracle.com/database/technologies/appdev/plsql.html" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/plsql.svg" alt="Oracle PL/SQL" /></a>
+                    {/* Microsoft Server DB */}
+                    <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/ms-sql-server.png" alt="Microsoft SQL Server" /></a>
                     <a href="https://www.json.org/json-en.html" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/json.png" alt="JSON" /></a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/xml.png" alt="XML" /></a>
-                    <a href="https://restfulapi.net/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/rest-api.png" alt="REST APIs" /></a>
-                    <a href="https://nodejs.org/en" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/nodejs-logo.png" alt="NodeJS" /></a>
+                    <a href="https://www.sqlalchemy.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/sql-alchemy.png" alt="SQLAlchemy" /></a>
+                    {/* SQLDeveloper */}
+                    <a href="https://www.oracle.com/database/sqldeveloper/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/sqldeveloper.svg" alt="Oracle SQLDeveloper" /></a>
+                    {/* MS Server Management Studio */}
+                    <a href="https://learn.microsoft.com/en-us/ssms/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/smms.png" alt="Microsoft SQL Server Management Studio" /></a>
+
                     <a href="https://qunitjs.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/qunit.png" alt="QUnit" style={{ borderRadius: "14px" }} /></a>
                     <a href="https://junit.org/junit5/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/junit5.png" alt="JUnit" /></a>
+                    {/* QTEST */}
+                    <a href="https://www.tricentis.com/products/unified-test-management-qtest" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/qtest.png" alt="Tricentis QTest" /></a>
                     <a href="https://docs.pytest.org/en/7.4.x/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/pytest.png" alt="Pytest" /></a>
-                    <a href="https://www.linux.com/what-is-linux/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/linux.png" alt="Linux" /></a>
+                    {/* AppScan On Cloud */}
+                    <a href="https://www.hcl-software.com/appscan/products/appscan-on-cloud" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/asoc.png" alt="HCL AppScan on Cloud (ASoC)" /></a>
+                    
+                    <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/docker.png" alt="Docker" /></a>
+                    <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/aws.png" alt="AWS" /></a>
+                    <a href="https://www.postman.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/postman.png" alt="Postman" /></a>
+                    {/* RunMyJobs */}
+                    <a href="https://www.redwood.com/workload-automation/job-scheduling/windows/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/runmyjobs.png" alt="Redwood RunMyJobs" /></a>
+                    {/* IBM ODM */}
+                    <a href="" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/ibm-odm.png" alt="IBM ODM" /></a>
+                    
+
+                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/git.png" alt="Git" /></a>
+                   <a href="https://github.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/github.png" alt="GitHub" /></a>
+                    {/* BitBucket */}
+                    <a href="https://bitbucket.org/product/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/bitbucket.png" alt="BitBucket" /></a>
+                    {/* Confluence */}
+                    <a href="https://www.atlassian.com/software/confluence" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/confluence.png" alt="Confluence" /></a>
+                    {/* Jira */}
+                    <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/jira.png" alt="Jira" /></a>
+                    
+                    <a href="https://restfulapi.net/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/rest-api.png" alt="REST APIs" /></a>
+                    
+                    {/* PowerApps */}
+                    <a href="https://www.microsoft.com/en/power-platform/products/power-apps" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/powerapps.png" alt="PowerApps" /></a>
+                    {/* SharePoint */}
+                    <a href="https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/sharepoint.png" alt="SharePoint" /></a>
+
+                    <a href="https://wordpress.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/wordpress.png" alt="WordPress" /></a>
+                    <a href="https://www.drupal.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/drupal.png" alt="Drupal" /></a>
+
+                    
                     <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/arduino.png" alt="Arduino" /></a>
                     <a href="https://en.wikipedia.org/wiki/I%C2%B2C" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/i2c.png" alt="I2C" /></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/bootstrap.png" alt="Bootstrap" /></a>
+                    <a href="https://mui.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/mui.png" alt="MUI" /></a>
                     <a href="https://threejs.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/threejs.png" alt="Three.JS" /></a>
                     <a href="https://processing.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/processing.png" alt="Processing" /></a>
                     <a href="https://p5js.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/p5.png" alt="P5.js" /></a>
-                    <a href="https://cycling74.com/products/max" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/max-msp.png" alt="Max/MSP/Jitter" /></a>
+                    
+                    
+                    <a href="https://jinja.palletsprojects.com/en/3.1.x/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/jinja.png" alt="Jinja" /></a>
+                    {/* IntelliJ */}
+                    <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/intellij.png" alt="IntelliJ" /></a>
                     <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/vscode.png" alt="Virtual Studio Code" /></a>
                     <a href="https://www.eclipse.org/ide/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/eclipse.png" alt="Eclipse" /></a>
                     <a href="https://www.bluej.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/bluej.png" alt="BlueJ" /></a>
-                    <a href="https://www.postman.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/postman.png" alt="Postman" /></a>
-                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/bootstrap.png" alt="Bootstrap" /></a>
-                    <a href="https://mui.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/mui.png" alt="MUI" /></a>
-                    <a href="https://wordpress.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/wordpress.png" alt="WordPress" /></a>
-                    <a href="https://www.drupal.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/drupal.png" alt="Drupal" /></a>
-                    <a href="https://jinja.palletsprojects.com/en/3.1.x/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/jinja.png" alt="Jinja" /></a>
-                    <a href="https://www.sqlalchemy.org/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/sql-alchemy.png" alt="SQLAlchemy" /></a>
                     <a href="https://scratch.mit.edu/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/scratch.png" alt="Scratch" /></a>
                     <a href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/adobe.png" alt="Adobe Creative Cloud" /></a>
                     <a href="https://workspace.google.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/google.png" alt="Google Workspace" /></a>
                     <a href="https://www.office.com/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/microsoft-office.png" alt="Microsoft Office" /></a>
                     <a href="https://www.apple.com/logic-pro/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/logic-pro.png" alt="Logic Pro" /></a>
                     <a href="https://www.apple.com/final-cut-pro/" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/final-cut-pro.png" alt="Final Cut Pro" /></a>
+                    <a href="https://cycling74.com/products/max" target="_blank" rel="noreferrer"><img className="tech-stack-img" src="images/tech-stack/max-msp.png" alt="Max/MSP/Jitter" /></a>
 
                 </Box>
                 

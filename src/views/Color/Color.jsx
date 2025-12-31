@@ -246,11 +246,11 @@ export default function Color() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="accordion">
-                        The color of the day is calculated using a formula
+                        The color of the day is calculated using a unique formula
                         developed to ensure a unique color for every day of the year,
                         and in subsequent years. This formula is based on how far
-                        through the year the current date is, as the beginning of
-                        the year starts with red-hued colors, and as the year goes on,
+                        through the year the current date is. Dates toward the beginning of
+                        the year will be red-hued colors, and as the year goes on,
                         it works its way through the rainbow.
                         The shades of the colors vary from day to day / year to year.
                     </Typography>
@@ -267,7 +267,7 @@ export default function Color() {
                 <AccordionDetails>
                     <Typography className="accordion">
                         The color schemes are generated quickly by sending API requests to
-                        (gathering data from) <a href="https://www.thecolorapi.com/" target="_blank" rel="noreferrer">The Color API</a>. The color schemes themselves
+                        <a href="https://www.thecolorapi.com/" target="_blank" rel="noreferrer">The Color API</a>. The color schemes themselves
                         are based on color theory / the color wheel.
                     </Typography>
                 </AccordionDetails>
@@ -283,8 +283,7 @@ export default function Color() {
                 <AccordionDetails>
                     <Typography className="accordion">
                         <a href="https://www.thecolorapi.com/" target="_blank" rel="noreferrer">The Color API</a> is an API (Application Programming Interface)
-                        which lets us access pre-calculated data based on the color that is
-                        selected to be the color of the day. This data includes the name of
+                        which lets us access data based on a color parameter. This data includes the name of
                         the color & the various colors attributed to it based on
                         different color schemes.
                     </Typography>
@@ -296,19 +295,20 @@ export default function Color() {
                     aria-controls="accordion-content-4"
                     id="accordion-header-4"
                 >
-                    <Typography className="accordion accordion-header">Why colors?</Typography>
+                    <Typography className="accordion accordion-header">Why is this here?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="accordion">
                         As a full-stack developer, it is my job to be critical of
                         every aspect I put into the visuals of my designs-- one of these being color.
                         Color theory gives a mathematical reasoning for our human emotional response to a color or group of colors.
-                        My more recent interest in color theory can be compared to my longterm love of music theory;
-                        I have always enjoyed combining my love of the arts / creativity / psychology
-                        with my aptitude for mathematics / patterns.
-                        Therefore, I felt including color in my portfolio would not only be
-                        a good way to demonstrate my technological ability to easily get information from an API,
+                        <br></br>My more recent interest in color theory can be compared to my longterm love of music theory;
+                        I have always enjoyed combining my love of the arts, creativity, and psychology
+                        with my aptitude for mathematics & patterns.
+                        <br></br>Therefore, I felt including color in my portfolio would not only be
+                        a good way to demonstrate my technological ability to easily & efficiently retrieve information from an API,
                         but also expresses my interest in the psychology / mathematics of design.
+                        <br></br>Additionally, this website was designed as a part of my application to the <a href="https://www.joincolab.io/">Co.Lab</a>  program I participated in. As a part of the application, we had to submit a portfolio website based on their own website's design, and including an external API call. Feel free to compare my designs with their website (though I cannot ensure they won't change their design!). 
                     </Typography>
                 </AccordionDetails>
             </Accordion>

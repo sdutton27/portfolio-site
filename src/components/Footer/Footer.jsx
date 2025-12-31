@@ -5,10 +5,10 @@ import './footer.css';
 export default function Footer() {
     return (
         <div id="footer-container" style={{ color: "#fff", backgroundColor: "#000", width: "100%"}}>
-            <Typography id="footer-title" sx={{ textAlign: "center", padding: "20px", fontSize: "1.6rem", fontFamily: "Lora, sans-serif" }}>
-                Simon Dutton, Software Engineer
+            <Typography id="footer-title" sx={{ textAlign: "center", padding: "20px", fontSize: "1rem", fontFamily: "Lora, sans-serif" }}>
+                Created by Simon Dutton, inspired by the <a href="https://www.joincolab.io/">Co.Lab</a> website themes
             </Typography>
-            <div style={{ display: "flex", flexDirection: "row",}}>
+            { /* <div style={{ display: "flex", flexDirection: "row",}}>
                 {/* <div id="source-code-container" style={{ minWidth: "50%" }}>
                     <Typography id="like-wys" style={{fontStyle:"italic", fontFamily: "Work Sans, sans-serif" }}>
                         Like what you see?
@@ -16,7 +16,7 @@ export default function Footer() {
                     <Typography style={{fontFamily: "Work Sans, sans-serif" }}>
                         Check out the source code on GitHub
                     </Typography>
-                </div> */}
+                </div> 
                 <div style={{ minWidth: "50%"}}>
                     <Typography id="connect" style={{ fontSize: "1.4rem", fontWeight: "600", fontFamily: "Work Sans, sans-serif" }}>
                         Connect
@@ -29,14 +29,14 @@ export default function Footer() {
                         </Typography>
                         </a>
                     </div>
-                    <div className="socials-container">
+                    {/* <div className="socials-container">
                     <a href="https://github.com/sdutton27/" target="_blank" rel="noreferrer" style={{display: "flex", alignItems:"center", color:"#fff", textDecoration:"none"}}>
                         <img src="images/social-media/github.png" width="30"></img>
                         <Typography className="socials-text">
                             GitHub
                         </Typography>
                     </a>
-                    </div>
+                    </div> 
                 </div>
                 <div id="source-code-container" style={{ minWidth: "50%" }}>
                     <Typography id="like-wys" style={{fontStyle:"italic", fontFamily: "Work Sans, sans-serif" }}>
@@ -48,6 +48,7 @@ export default function Footer() {
                 </div>
 
             </div>
+            */}
         </div>
     )
 }
